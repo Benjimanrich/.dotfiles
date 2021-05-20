@@ -31,11 +31,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab'
 Plug 'calviken/vim-gdscript3'
+Plug 'ziglang/zig.vim'
+Plug 'andreypopp/vim-colors-plain'
 call plug#end()
-if has('nvim') || has('termguicolors')
-  set termguicolors
-endif
-colorscheme challenger_deep
+colorscheme plain
 let g:airline#extensions#tabline#enabled = 1
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
